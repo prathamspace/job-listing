@@ -1,4 +1,4 @@
 <?php
 
-echo "create page";
-?>
+
+loadView('listings/create');
