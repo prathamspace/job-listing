@@ -1,3 +1,15 @@
 <?php
 
-loadview('home');
+
+
+
+
+
+$config = require basePath('config/db.php');
+$db = new Database($config);
+$listings = $db->query("Select * from listings")->fetchAll();
+
+
+loadview('home', [
+    'listings' => $listings
+]);
