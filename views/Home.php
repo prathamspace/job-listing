@@ -6,6 +6,15 @@
 
 <?php loadPartial("top-banner"); ?>
 
+<?php
+
+$config = require basePath('config/db.php');
+
+
+$db = new Database($config);
+$data = $db->query("Select * from listings")->fetchAll();
+print_r($data);
+?>
 
 <section>
     <div class="container mx-auto p-4 mt-4">
