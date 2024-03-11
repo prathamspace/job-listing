@@ -1,8 +1,14 @@
 <?php
 
 require "../helpers.php";
-require basePath('Router.php');
-require basePath('Database.php');
+require basePath('Framework/Router.php');
+require basePath('Framework/Database.php');
+
+
+
+spl_autoload_register(function ($class) {
+
+});
 
 $router = new Router();
 $routes = require basePath('routes.php');
