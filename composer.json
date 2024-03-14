@@ -1,0 +1,16 @@
+{
+  "name": "prathamspace/job-listing",
+  "description": "Job Listing Application",
+  "authors": [
+    {
+      "name":"Pratham",
+      "email": "info@onerightsolution.in"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "Framework/",
+      "App\\": "App/"
+    }
+  }
+}
