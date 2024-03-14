@@ -3,15 +3,19 @@
 require __DIR__.'/../vendor/autoload.php';
 require "../helpers.php";
 
+
+use Framework\Router;
+use Framework\Database;
+
 /**
  *  Loading Classes
  */
-spl_autoload_register(function ($class) {
-    $path=basePath("Framework/".$class.".php");
-    if(file_exists($path)){
-        require $path;
-    }
-});
+//spl_autoload_register(function ($class) {
+//    $path=basePath("Framework/".$class.".php");
+//    if(file_exists($path)){
+//        require $path;
+//    }
+//});
 
 // Instantiate The Router
 $router = new Router();
